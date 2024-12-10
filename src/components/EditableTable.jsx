@@ -161,7 +161,7 @@ const EditableTable = ({ tasks, setTasks }) => {
               <td>
                 {editingRow === task.id ? (
                   <select
-                    className="form-control"
+                    className="form-control colo-black"
                     value={task.status}
                     onChange={(e) => handleInputChange(e, task.id, "status")}
                   >
@@ -177,7 +177,7 @@ const EditableTable = ({ tasks, setTasks }) => {
                         : task.status === "In Progress"
                         ? "badge-warning"
                         : "badge-secondary"
-                    }`}
+                    } text-black`}
                   >
                     {task.status}
                   </span>
